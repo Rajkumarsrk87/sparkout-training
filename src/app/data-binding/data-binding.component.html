@@ -1,0 +1,13 @@
+<!-- string interpolation -->
+<p>{{"server"}} with ID {{serverId}} is {{getServerStatus()}}</p>
+
+<!-- property binding -->
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add server</button>
+<!-- <p [innerText]="allowNewServer"></p> -->
+ <p>{{serverCreationStatus}}</p>
+
+ <!-- Two way binding -->
+  <input type="text" class="form-control w-25 mb-3" (input)="onUpdateServerName($event)">
+
+  <input type="text" class="form-control w-25" [(ngModel)]="serverName">
+  <p>{{serverName}}</p>
