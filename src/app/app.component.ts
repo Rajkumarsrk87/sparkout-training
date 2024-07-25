@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ChangeEventComponent } from './change-event/change-event.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,DataBindingComponent, ParentComponent],
+  imports: [RouterOutlet, RouterLink, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

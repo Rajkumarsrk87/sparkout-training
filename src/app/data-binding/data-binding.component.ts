@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ParentComponent } from '../parent/parent.component';
 
 @Component({
   selector: 'app-data-binding',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, ParentComponent],
   templateUrl: './data-binding.component.html',
   styleUrl: './data-binding.component.css'
 })
@@ -29,7 +30,7 @@ constructor(){
 }
 
 //event binding
-serverCreationStatus = "No server was creted"
+serverCreationStatus = "No server was created"
 onCreateServer(){
 this.serverCreationStatus = "Server was created"
 }
