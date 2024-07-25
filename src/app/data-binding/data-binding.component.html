@@ -11,8 +11,11 @@
 
  <!-- Two way binding -->
  <h6 class="mt-4">Two way binding</h6>
-  <input type="text" class="form-control w-25 mb-3" (input)="onUpdateServerName($event)">
 
+ <p>Here Using input event</p>
+ <input type="text" class="form-control w-25 mb-3" (input)="onUpdateServerName($event)">
+
+ <p>Here Using ngModel two way</p>
   <input type="text" class="form-control w-25" [(ngModel)]="serverName">
   <p>{{serverName}}</p>
 
