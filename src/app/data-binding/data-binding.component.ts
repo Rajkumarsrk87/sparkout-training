@@ -22,7 +22,7 @@ export class DataBindingComponent {
 
   //property binding
 
-allowNewServer = false;
+allowNewServer:boolean = false;
 constructor(){
   setTimeout(()=> {
     this.allowNewServer = true;

@@ -11,6 +11,7 @@ import { log } from 'console';
 })
 export class ChangeEventComponent implements OnInit{
 
+  //ngModelChange event
   searchValue: String = "Raj";
 
   searchValueChange(event: Event){
@@ -30,6 +31,7 @@ export class ChangeEventComponent implements OnInit{
     console.log('onsearchSubmit', this.searchForm); 
   }
 
+  //Change event
   title = new FormControl("My App");
   ngOnInit(){
     this.title.events.subscribe((event)=> {
